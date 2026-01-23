@@ -10,21 +10,25 @@ else
     set visualbell
 endif
 
+set mouse=a
+
 if has("gui_running")
     set guifont=
 
     " !!!WARNING!!! Linux font names must be on top of windows'.
-    " Linux font names
-    set guifont+=Comic\ Mono\ 14,
-    set guifont+=JetBrains\ Mono\ 14,
+    " Linux font names (Does not work properly...).
+    set guifont+=Comic\ Mono\ 14
+    set guifont+=JetBrains\ Mono\ 14
     " Fallback
-    set guifont+=Monospace\ 14,
+    set guifont+=Inconsolata\ 14
+    set guifont+=Monospace\ 14
 
     " Windows font names
-    set guifont+=Comic\ Mono:h14,
-    set guifont+=JetBrains\ Mono:h14,
+    set guifont+=Comic\ Mono:h14
+    set guifont+=JetBrains\ Mono\ Semibold:h14
+    set guifont+=JetBrains\ Mono:h14
     " Fallback
-    set guifont+=Consolas:h14,
+    set guifont+=Consolas:h14
 
     " Remove menu bar and toolbar
     set guioptions-=m
