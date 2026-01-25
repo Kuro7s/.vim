@@ -1,4 +1,4 @@
-# My vim configuration.
+# My vim configuration
 
 ## Install commands
 ### Windows
