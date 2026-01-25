@@ -129,3 +129,4 @@ let g:local_file=$MYVIMDIR . "/.local.vim"
 if filereadable(expand(g:local_file))
     execute "source" g:local_file
 endif
+
