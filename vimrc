@@ -17,18 +17,17 @@ if has("gui_running")
 
     " !!!WARNING!!! Linux font names must be on top of windows'.
     " Linux font names (Does not work properly...).
-    set guifont+=Comic\ Mono\ 14
-    set guifont+=JetBrains\ Mono\ 14
+    set guifont+=JetBrains\ Mono\ Semibold\ 11
+    set guifont+=JetBrains\ Mono\ 11
     " Fallback
-    set guifont+=Inconsolata\ 14
-    set guifont+=Monospace\ 14
+    set guifont+=Inconsolata\ 11
+    set guifont+=Monospace\ 11
 
     " Windows font names
-    set guifont+=Comic\ Mono:h14
-    set guifont+=JetBrains\ Mono\ Semibold:h14
-    set guifont+=JetBrains\ Mono:h14
+    set guifont+=JetBrains\ Mono\ Semibold:h11
+    set guifont+=JetBrains\ Mono:h11
     " Fallback
-    set guifont+=Consolas:h14
+    set guifont+=Consolas:h11
 
     " Remove menu bar and toolbar
     set guioptions-=m
