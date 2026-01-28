@@ -86,15 +86,16 @@ set termguicolors
 set background=dark
 
 " Status Line Custom
+" NOTE: Symbols with backslash are only supported between double quotes.
 let g:mode_name_map={
     \ 'n'  : 'NORMAL',
     \ 'no' : 'NORMAL OPERATOR PENDING',
     \ 'v'  : 'VISUAL',
     \ 'V'  : 'VISUAL LINE',
-    \ '^V' : 'VISUAL BLOCK',
+    \ "\<C-v>" : 'VISUAL BLOCK',
     \ 's'  : 'SELECT',
     \ 'S'  : 'SELECT LINE',
-    \ '^S' : 'SELECT BLOCK',
+    \ "\<C-s>" : 'SELECT BLOCK',
     \ 'i'  : 'INSERT',
     \ 'R'  : 'Replace',
     \ 'Rv' : 'VISUAL REPLACE',
