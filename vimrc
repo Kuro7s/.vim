@@ -13,7 +13,7 @@ endif
 set mouse=a
 
 if has("gui_running")
-    set guifont=
+    set guifont =
 
     " !!!WARNING!!! Linux font names must be on top of windows'.
     " Linux font names (Does not work properly...).
@@ -45,7 +45,6 @@ set nomodeline
 set nobackup
 set nowritebackup
 set noswapfile
-set noshowmode
 
 set autoread
 
@@ -109,6 +108,7 @@ let g:mode_name_map={
     \ 't'  : 'TERMINAL'
     \}
 
+set noshowmode
 set laststatus=2
 
 autocmd ColorScheme * hi link User1 CursorLine
