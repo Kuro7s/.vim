@@ -6,3 +6,10 @@
 !vimrc
 !init.vim
 
+!/after
+/after/*
+
+!/after/syntax
+/after/syntax/*
+
+!/after/syntax/c.vim

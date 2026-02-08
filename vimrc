@@ -13,19 +13,22 @@ endif
 set mouse=a
 
 if has("gui_running")
-    set guifont =
+    set guifont=
 
     " !!!WARNING!!! Linux font names must be on top of windows'.
     " Linux font names (Does not work properly...).
+    set guifont+=Iosevka\ 13.5
     set guifont+=JetBrains\ Mono\ Semibold\ 11
     set guifont+=JetBrains\ Mono\ 11
+    set guifont+=Inconsolata\ 13.5
     " Fallback
-    set guifont+=Inconsolata\ 11
     set guifont+=Monospace\ 11
 
     " Windows font names
+    set guifont+=Iosevka:h13.5
     set guifont+=JetBrains\ Mono\ Semibold:h11
     set guifont+=JetBrains\ Mono:h11
+    set guifont+=Inconsolata\ 13.5
     " Fallback
     set guifont+=Consolas:h11
 

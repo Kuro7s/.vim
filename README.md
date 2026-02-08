@@ -1,6 +1,7 @@
 # My vim configuration
 
-## Install commands
+## Installation
+
 ### Windows
 ```console
 git clone https://github.com/Kuro7s/.vim.git %USERPROFILE%\vimfiles
@@ -10,8 +11,10 @@ git clone https://github.com/Kuro7s/.vim.git %USERPROFILE%\vimfiles
 git clone https://github.com/Kuro7s/.vim.git ~/.vim
 ```
 
-## Install commands (Neovim)
+## Installation (Neovim)
+
 ### Windows
+
 ```console
 git clone https://github.com/Kuro7s/.vim.git %LOCALAPPDATA%\nvim
 ```
