@@ -13,3 +13,9 @@
 /after/syntax/*
 
 !/after/syntax/c.vim
+
+!/colors
+/colors/*
+
+!/colors/nordic-night.vim
+!/colors/my-retrobox.vim

@@ -32,6 +32,9 @@ if has("gui_running")
     " Fallback
     set guifont+=Consolas:h11
 
+    " Remove custom tabline for guis
+    set guioptions-=e
+
     " Remove menu bar and toolbar
     set guioptions-=m
     set guioptions-=T
@@ -126,10 +129,15 @@ set statusline+=\ %Y\ \|\
 set statusline+=%p%%\ 
 set statusline+=%0*\ %l:%c\ 
 
-colorscheme retrobox
-
-let g:local_file=$MYVIMDIR . "/.local.vim"
-if filereadable(expand(g:local_file))
-    execute "source" g:local_file
+let g:colorscheme_file = expand($MYVIMDIR . "/.colorscheme")
+au ColorScheme * call writefile([g:colors_name], g:colorscheme_file, "")
+if filereadable(g:colorscheme_file)
+    execute "colorscheme" readfile(g:colorscheme_file, "", 1)[0]
+else
+    colorscheme my-retrobox
 endif
 
+let g:local_file = expand($MYVIMDIR . "/.local.vim")
+if filereadable(g:local_file)
+    execute "source" g:local_file
+endif
