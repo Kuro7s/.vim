@@ -16,6 +16,9 @@ syn keyword cType
     \ i8 i16 i32 i64
     \ isize
 
+syn keyword cStatement defer
+syn keyword cStatement cast
+
 syn keyword cStatement global
 syn keyword cStatement global_var
 syn keyword cStatement global_variable
@@ -26,6 +29,10 @@ syn keyword cStatement local_persist
 syn keyword cStatement function
 syn keyword cStatement internal
 
-syn keyword cStatement defer
+syn keyword cStatement typedef
 
-syn keyword cStatement cast
+syn keyword cStatement struct
+syn keyword cStatement union
+syn keyword cStatement enum
+
+syn keyword cStatement const
